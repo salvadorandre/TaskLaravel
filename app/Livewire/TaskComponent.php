@@ -64,13 +64,6 @@ class TaskComponent extends Component
         $this->dispatch('clode-modal');
     }
     
-    
-    
-
-
-    
-
-
     public function render()
     {
         $this->taskContent = Task::where('taskStatus', '!=', 'INACTIVO')->get(); 
